@@ -46,7 +46,8 @@ Step 3 - Install proxy
 	sudo ln -s /etc/nginx/sites-available/example /etc/nginx/sites-enabled/
 	sudo systemctl restart nginx.service
 	
-Step 4: Install mysql 
+Step 4: Install mysql
+
 	sudo apt install mysql-server
 	sudo mysql_secure_installation
 	sudo systemctl status mysql
