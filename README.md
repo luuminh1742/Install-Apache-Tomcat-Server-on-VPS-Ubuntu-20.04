@@ -2,7 +2,7 @@
 Instructions on configuring Ubuntu 20.04 VPS server to run java web.
 
 Step 1: Install java
-...
+
 Step 2: Install Tomcat
 
 	sudo apt-cache search tomcat
@@ -42,7 +42,7 @@ Step 3 - Install proxy
 				proxy_pass http://127.0.0.1:8080;
 			}
 	}
-  // server_name is public ip or domain name
+  	// server_name is public ip or domain name
 	sudo ln -s /etc/nginx/sites-available/example /etc/nginx/sites-enabled/
 	sudo systemctl restart nginx.service
 	
@@ -53,22 +53,21 @@ Step 4: Install mysql
 	sudo systemctl start mysql
 	sudo systemctl stop mysql
 	sudo mysql -u root -h localhost -p
-  // Then set password for user root in mysql
+  	//Then set password for user root in mysql
 
 
-//-----------------------------------------
 
 Fix error:  413 Request Entity Too Large on Nginx
 
-sudo nano /etc/nginx/nginx.conf
+	sudo nano /etc/nginx/nginx.conf
 
-http {
-    ...
-    # Set value 'client_max_body_size'
-    client_max_body_size 100M;
-    ...
-}
+	http {
+	    ...
+	    # Set value 'client_max_body_size'
+	    client_max_body_size 100M;
+	    ...
+	}
 
 
-sudo nginx -s reload
+	sudo nginx -s reload
 
