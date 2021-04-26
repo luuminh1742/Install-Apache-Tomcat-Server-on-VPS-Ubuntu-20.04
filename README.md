@@ -1,4 +1,4 @@
-# Install-Apache-Tomcat-Server-on-Ubuntu-20.04
+# Install-Apache-Tomcat-Server-on-VPS-Ubuntu-20.04
 Instructions on configuring Ubuntu 20.04 VPS server to run java web.
 
 ![image](https://lh3.googleusercontent.com/PxeGV8O8Hew_gB1I4bJUKpfs0wEHS9fXl6YDoHnk5Psg1jZvSPkmGP4Ru6ntUEqQMxcqPnMvTtM2FSXF0Z7l=w1920-h953)
