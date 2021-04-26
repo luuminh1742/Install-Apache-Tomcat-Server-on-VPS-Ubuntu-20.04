@@ -1,6 +1,8 @@
 # Install-Apache-Tomcat-Server-on-Ubuntu-20.04
 Instructions on configuring Ubuntu 20.04 VPS server to run java web.
 
+![image](https://lh3.googleusercontent.com/PxeGV8O8Hew_gB1I4bJUKpfs0wEHS9fXl6YDoHnk5Psg1jZvSPkmGP4Ru6ntUEqQMxcqPnMvTtM2FSXF0Z7l=w1920-h953)
+
 Step 0: Update APT
 
 	First, as always, update your APT.
@@ -40,7 +42,9 @@ Step 3 - Install proxy
 	server {
 		listen 80;
 		listen [::]:80;
-		server_name  47.254.123.50, abc.com;
+		server_name  47.254.123.50, abc.com;![tomcat](https://user-images.githubusercontent.com/61933071/116106648-82a80f00-a6dc-11eb-8647-f329586dd216.png)![tomcat](https://user-images.githubusercontent.com/61933071/116106672-89368680-a6dc-11eb-9424-93548d608c86.png)
+
+
     
 		proxy_redirect           off;
 		proxy_set_header         X-Real-IP $remote_addr;
